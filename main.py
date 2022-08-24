@@ -5,8 +5,8 @@ agent_list_sheet = "Sheet_nameame - Month "
 qa_sheet_link = "sheet_link" #@param {type:"string"}
 agent_list_sheet = "Sheet_name - Month" #@param {type:"string"}
 
-!pip install --upgrade gspread
-!pip install gspread-formatting
+# !pip install --upgrade gspread
+# !pip install gspread-formatting
 from datetime import datetime
 import random
 import pandas as pd
@@ -38,7 +38,7 @@ random_agent_df['Auditor']= random_agent_df['Auditor'].str.strip().str.lower()
 diff = set(random_agent_df['Auditor']) - set(qa_lst)
 
 print('Below agents are not in the QA list for 'f'{qa_date}, please contact the vendor and request them to QA the agents for the mentioned date.')
-for email in diff:
+for email in
   print(email)
 print(len(diff))
 
