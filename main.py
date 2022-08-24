@@ -74,3 +74,5 @@ with batch_updater(qa_ws.spreadsheet) as batch:
     if should_highlight:
       batch.format_cell_range(qa_ws,f"{gspread.utils.rowcol_to_a1(row['row_number'], start_col)}:{gspread.utils.rowcol_to_a1(row['row_number']+24, start_col)}", fmt)
       is_highlighted.add(auditor_name)
+
+      print("this is a test")
